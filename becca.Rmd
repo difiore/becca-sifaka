@@ -1,0 +1,19 @@
+---
+title: "Untitled"
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r}
+library(tidyverse)
+f <- "Becca sifaka data for Tony's class to play with.csv"
+d <- read_csv(f, col_names = TRUE)
+
+d
+
+m <- lm("BMI ~ Sex + 'Drought (Y/N)'", data=d)
+summary(m)
+
+names(d)
+```
