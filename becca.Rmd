@@ -6,6 +6,8 @@ editor_options:
 ---
 
 ```{r}
+library(usethis)
+usethis::use_github(protocol="https")
 library(tidyverse)
 f <- "Becca sifaka data for Tony's class to play with.csv"
 d <- read_csv(f, col_names = TRUE)
